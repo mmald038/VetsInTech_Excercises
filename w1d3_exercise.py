@@ -61,8 +61,9 @@ print(len(us_states) == 50)
 
 # create a variable my_state_index and assign the index value of the state you currently reside in
 
-my_state_index = us_states.index("Texas")
+# - my_state_index = us_states.index("Texas") (this was incorrect)
 
+my_state_index = 42  # this is the correct code
 
 # print my_state_index (not on exercise, just wanted to see how the code works)
 print(my_state_index)
