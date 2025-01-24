@@ -1,0 +1,41 @@
+
+# pip install requests      #this was done on the terminal
+
+import json
+
+import requests
+
+url = 'https://jsonplaceholder.typicode.com/posts'
+response = requests.get(url)
+#print(response)    # returns a Response class
+json_data = response.json()
+print(json_data)
+posts = json_data
+#print(posts)
+
+
+for idx, post in enumerate(posts):
+    print(idx)
+    print(post['title'])
+
+
+"""
+
+THIS IS HOW YOU IMPORT WEBPAGES FOR WEBSCRAPING
+import requests
+
+x = requests.get('https://w3schools.com/python/demopage.htm')
+
+print(x.text)
+
+
+ANOTHER WAY
+
+import requests
+
+url = 'https://www.w3schools.com/python/demopage.js'
+
+x = requests.get(url)
+
+print[x.json())
+"""
